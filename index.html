@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>स्मार्ट स्ट्रीट लाइट प्रोजेक्ट - वॉयस असिस्टेंट गाइड</title>
+    <title>स्मार्ट स्ट्रीट लाइट प्रोजेक्ट - पूर्ण विवरण और वॉयस असिस्टेंट</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -56,20 +56,8 @@
             background: white;
             border-radius: 14px;
             box-shadow: 0 8px 16px -3px rgba(0, 0, 0, 0.12);
-            overflow: hidden;
-            border-top: 6px solid var(--primary);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card img {
-            width: 100%;
-            height: 320px;
-            object-fit: cover;
-        }
-
-        .card-content {
             padding: 2.5rem;
+            border-top: 6px solid var(--primary);
         }
 
         .card h2 {
@@ -157,7 +145,6 @@
             box-shadow: 0 8px 16px -3px rgba(0, 0, 0, 0.12);
             padding: 2.5rem;
             border-top: 6px solid #3b82f6;
-            margin-top: 2rem;
         }
 
         .assistant-header {
@@ -254,22 +241,6 @@
             margin-top: 4rem;
             font-size: 1.1rem;
         }
-
-        @media (min-width: 768px) {
-            .card {
-                flex-direction: row;
-            }
-            .card img {
-                width: 42%;
-                height: auto;
-            }
-            .card-content {
-                width: 58%;
-            }
-            .card:nth-child(even) {
-                flex-direction: row-reverse;
-            }
-        }
     </style>
 </head>
 <body>
@@ -283,65 +254,54 @@
         
         <!-- Section 1: Detailed Problem -->
         <div class="card" style="border-top-color: #ef4444;">
-            <img src="problem.jpg" alt="वास्तविक समस्या और पृष्ठभूमि">
-            <div class="card-content">
-                <h2>🚨 वास्तविक समस्या और पृष्ठभूमि (The Core Problem)</h2>
-                <p>परंपरागत स्ट्रीट लाइट प्रणालियाँ टाइमर (Timers) पर आधारित होती हैं या उन्हें मैन्युअली चालू-बंद करना पड़ता है। इसके गंभीर दुष्परिणाम हैं:</p>
-                <ul>
-                    <li><strong>ऊर्जा की बर्बादी:</strong> रात के समय जब सड़कों पर कोई आवाजाही नहीं होती, तब भी लाइटें 100% क्षमता से जलती रहती हैं।</li>
-                    <li><strong>राजस्व का नुकसान:</strong> ग्राम पंचायतों और नगर निगमों के बजट का एक बड़ा हिस्सा अनावश्यक बिजली बिल चुकाने में खर्च हो जाता है।</li>
-                    <li><strong>पर्यावरणीय संकट:</strong> थर्मल पावर प्लांटों पर अतिरिक्त दबाव पड़ने से अधिक कोयला जलता है, जिससे कार्बन उत्सर्जन और ग्लोबल वार्मिंग बढ़ती है।</li>
-                </ul>
-            </div>
+            <h2>🚨 वास्तविक समस्या और पृष्ठभूमि (The Core Problem)</h2>
+            <p>परंपरागत स्ट्रीट लाइट प्रणालियाँ टाइमर (Timers) पर आधारित होती हैं या उन्हें मैन्युअली चालू-बंद करना पड़ता है। इसके गंभीर दुष्परिणाम हैं:</p>
+            <ul>
+                <li><strong>ऊर्जा की बर्बादी:</strong> रात के समय जब सड़कों पर कोई आवाजाही नहीं होती, तब भी लाइटें 100% क्षमता से जलती रहती हैं।</li>
+                <li><strong>राजस्व का नुकसान:</strong> ग्राम पंचायतों और नगर निगमों के बजट का एक बड़ा हिस्सा अनावश्यक बिजली बिल चुकाने में खर्च हो जाता है।</li>
+                <li><strong>पर्यावरणीय संकट:</strong> थर्मल पावर प्लांटों पर अतिरिक्त दबाव पड़ने से अधिक कोयला जलता है, जिससे कार्बन उत्सर्जन और ग्लोबल वार्मिंग बढ़ती है।</li>
+            </ul>
         </div>
 
         <!-- Section 2: Detailed Components & Working -->
         <div class="card" style="border-top-color: #f59e0b;">
-            <img src="components.jpg" alt="उपकरणों की विस्तृत जानकारी">
-            <div class="card-content">
-                <h2>⚙️ उपकरण और उनकी तकनीकी विशेषताएँ (Detailed Components)</h2>
-                <p>इस मॉडल को बनाने में उपयोग किए गए प्रत्येक घटक का विशिष्ट कार्य है:</p>
-                <ul>
-                    <li><strong><a href="https://en.wikipedia.org/wiki/Arduino" target="_blank">Arduino Uno R3</a>:</strong> यह माइक्रोकंट्रोलर बोर्ड प्रोजेक्ट का 'मस्तिष्क' है, जो सेंसर्स से सिग्नल लेकर लाइट्स को नियंत्रित करता है।</li>
-                    <li><strong><a href="https://en.wikipedia.org/wiki/Passive_infrared_sensor" target="_blank">IR Motion Sensor</a>:</strong> यह इन्फ्रारेड किरणों के जरिए सड़क पर इंसानों या वाहनों की गति (Motion) को डिटेक्ट करता है।</li>
-                    <li><strong><a href="https://en.wikipedia.org/wiki/Photoresistor" target="_blank">LDR (Light Dependent Resistor)</a>:</strong> यह प्रकाश की तीव्रता को मापकर यह तय करता है कि दिन के समय सर्किट निष्क्रिय रहे।</li>
-                    <li><strong>LEDs & Resistors:</strong> कम वोल्टेज पर तेज रोशनी देने वाले विजुअल एलिमेंट्स और करंट कंट्रोल करने वाले प्रतिरोधक।</li>
-                </ul>
-            </div>
+            <h2>⚙️ उपकरण और उनकी तकनीकी विशेषताएँ (Detailed Components)</h2>
+            <p>इस मॉडल को बनाने में उपयोग किए गए प्रत्येक घटक का विशिष्ट कार्य है:</p>
+            <ul>
+                <li><strong><a href="https://en.wikipedia.org/wiki/Arduino" target="_blank">Arduino Uno R3</a>:</strong> यह माइक्रोकंट्रोलर बोर्ड प्रोजेक्ट का 'मस्तिष्क' है, जो सेंसर्स से सिग्नल लेकर लाइट्स को नियंत्रित करता है।</li>
+                <li><strong><a href="https://en.wikipedia.org/wiki/Passive_infrared_sensor" target="_blank">IR Motion Sensor</a>:</strong> यह इन्फ्रारेड किरणों के जरिए सड़क पर इंसानों या वाहनों की गति (Motion) को डिटेक्ट करता है।</li>
+                <li><strong><a href="https://en.wikipedia.org/wiki/Photoresistor" target="_blank">LDR (Light Dependent Resistor)</a>:</strong> यह प्रकाश की तीव्रता को मापकर यह तय करता है कि दिन के समय सर्किट निष्क्रिय रहे।</li>
+                <li><strong>LEDs & Resistors:</strong> कम वोल्टेज पर तेज रोशनी देने वाले विजुअल एलिमेंट्स और करंट कंट्रोल करने वाले प्रतिरोधक।</li>
+            </ul>
         </div>
 
         <!-- Section 3: Step-by-Step Working & Code Logic -->
         <div class="card" style="border-top-color: #10b981;">
-            <img src="solution.jpg" alt="कार्यप्रणाली और कोडिंग लॉजिक">
-            <div class="card-content">
-                <h2>💡 कार्यप्रणाली और सर्किट लॉजिक (Working & Step Logic)</h2>
-                <p>यह पूरा सिस्टम ऑटोमैटिक माइक्रोकंट्रोलर लॉजिक पर काम करता है। इसकी चरण-दर-चरण प्रक्रिया:</p>
-                
-                <div class="flowchart">
-                    <div class="flow-step">1. LDR सेंसर बाहरी रौशनी जाँचता है (अंधेरा होने पर सक्रिय)</div>
-                    <div class="arrow">↓</div>
-                    <div class="flow-step">2. IR सेंसर सड़क पर मोशन (हलचल) का इंतज़ार करता है</div>
-                    <div class="arrow">↓ वाहन/व्यक्ति गुजरने पर</div>
-                    <div class="flow-step">3. Arduino सिग्नल पाकर संबंधित LED लाइट ऑन कर देता है</div>
-                    <div class="arrow">↓ कुछ सेकंड बाद</div>
-                    <div class="flow-step">4. सड़क खाली होने पर लाइट स्वतः बंद हो जाती है</div>
-                </div>
+            <h2>💡 कार्यप्रणाली और सर्किट लॉजिक (Working & Step Logic)</h2>
+            <p>यह पूरा सिस्टम ऑटोमैटिक माइक्रोकंट्रोलर लॉजिक पर काम करता है। इसकी चरण-दर-चरण प्रक्रिया:</p>
+            
+            <div class="flowchart">
+                <div class="flow-step">1. LDR सेंसर बाहरी रौशनी जाँचता है (अंधेरा होने पर सक्रिय)</div>
+                <div class="arrow">↓</div>
+                <div class="flow-step">2. IR सेंसर सड़क पर मोशन (हलचल) का इंतज़ार करता है</div>
+                <div class="arrow">↓ वाहन/व्यक्ति गुजरने पर</div>
+                <div class="flow-step">3. Arduino सिग्नल पाकर संबंधित LED लाइट ऑन कर देता है</div>
+                <div class="arrow">↓ कुछ सेकंड बाद</div>
+                <div class="flow-step">4. सड़क खाली होने पर लाइट स्वतः बंद हो जाती है</div>
             </div>
         </div>
 
         <!-- Section 4: Benefits, Impact & Conclusion -->
         <div class="card" style="border-top-color: #3b82f6;">
-            <div class="card-content" style="width: 100%;">
-                <h2>🎯 वित्तीय प्रभाव, लाभ और निष्कर्ष (Impact & Conclusion)</h2>
-                <p>इस प्रोजेक्ट का जमीनी स्तर पर अनगिनत फायदे हैं:</p>
-                <ul>
-                    <li><strong>60% से 70% तक बिजली की बचत:</strong> केवल जरूरत के वक्त लाइट जलने से भारी ऊर्जा संरक्षण होता है।</li>
-                    <li><strong>दीर्घकालिक स्थायित्व:</strong> उपकरणों और एलईडी की लाइफ बढ़ जाती है क्योंकि वे पूरे 12 घंटे लगातार नहीं जलते।</li>
-                    <li><strong>आर्थिक रूप से सुलभ:</strong> इसे बहुत कम लागत पर किसी भी स्कूल या ग्रामीण क्षेत्र में आसानी से स्थापित किया जा सकता है।</li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>अंतिम निष्कर्ष:</strong> यह स्मार्ट स्ट्रीट लाइट मॉडल ऊर्जा दक्षता (Energy Efficiency) का एक उत्कृष्ट उदाहरण है, जो भविष्य के <a href="https://en.wikipedia.org/wiki/Smart_city" target="_blank">स्मार्ट शहरों</a> के निर्माण में अत्यंत उपयोगी साबित होगा।
-                </div>
+            <h2>🎯 वित्तीय प्रभाव, लाभ और निष्कर्ष (Impact & Conclusion)</h2>
+            <p>इस प्रोजेक्ट का जमीनी स्तर पर अनगिनत फायदे हैं:</p>
+            <ul>
+                <li><strong>60% से 70% तक बिजली की बचत:</strong> केवल जरूरत के वक्त लाइट जलने से भारी ऊर्जा संरक्षण होता है।</li>
+                <li><strong>दीर्घकालिक स्थायित्व:</strong> उपकरणों और एलईडी की लाइफ बढ़ जाती है क्योंकि वे पूरे 12 घंटे लगातार नहीं जलते।</li>
+                <li><strong>आर्थिक रूप से सुलभ:</strong> इसे बहुत कम लागत पर किसी भी स्कूल या ग्रामीण क्षेत्र में आसानी से स्थापित किया जा सकता है।</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>अंतिम निष्कर्ष:</strong> यह स्मार्ट स्ट्रीट लाइट मॉडल ऊर्जा दक्षता (Energy Efficiency) का एक उत्कृष्ट उदाहरण है, जो भविष्य के <a href="https://en.wikipedia.org/wiki/Smart_city" target="_blank">स्मार्ट शहरों</a> के निर्माण में अत्यंत उपयोगी साबित होगा।
             </div>
         </div>
 
@@ -410,7 +370,7 @@
 
                 const utterance = new SpeechSynthesisUtterance(botReply);
                 utterance.lang = 'hi-IN'; // Set language to Hindi
-                utterance.rate = 0.95; // Speaking speed (slightly slower for clarity)
+                utterance.rate = 0.95; // Speaking speed
                 utterance.pitch = 1.0;
 
                 utterance.onstart = function() {
